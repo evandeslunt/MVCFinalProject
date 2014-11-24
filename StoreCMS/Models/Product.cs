@@ -5,7 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace Final.Models
+namespace StoreCMS.Models
 {
     public class Product
     {
