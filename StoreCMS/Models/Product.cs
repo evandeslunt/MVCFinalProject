@@ -19,6 +19,11 @@ namespace Final.Models
         [Range(0, 100000)]
         public Decimal Price { get; set; }
 
+        
+        public string Description { get; set; }
+
+
+
         //[Required(ErrorMessage = "BarCode Number is Required")]
         //public string BarCodeNumber { get; set; }
     }
