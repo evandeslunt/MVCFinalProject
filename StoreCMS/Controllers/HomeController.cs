@@ -26,5 +26,26 @@ namespace StoreCMS.Controllers
 
             return View();
         }
+
+        public ActionResult Departments()
+        {
+            ViewBag.Message = "Departments";
+
+            return View();
+        }
+
+        public ActionResult SubDepartments()
+        {
+            ViewBag.Message = "Sub-Departments";
+
+            return View();
+        }
+
+        public ActionResult Item()
+        {
+            ViewBag.Message = "Item";
+
+            return View();
+        }
     }
 }
