@@ -7,5 +7,7 @@ namespace StoreCMS.Models
 {
     public class ShoppingCart
     {
+
+
     }
 }
