@@ -8,12 +8,19 @@ namespace StoreCMS.Models
 {
     public class ShoppingCart
     {
-        public int Quantity { get; set; }
-
+        
         public List<Product> allProducts { get; set; }
 
-        public List<Product> selectedProducts { get; set; }
+        public List<OrderItem> selectedItems { get; set; }
 
-
+        public Decimal getGrandTotal()
+        {
+            decimal grandTotal = 0;
+            foreach (OrderItem item in selectedItems)
+            {
+                grandTotal += item.getSubtotal();
+            }
+            return grandTotal;
+        }
     }
 }
