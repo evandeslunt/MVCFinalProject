@@ -1,0 +1,15 @@
+﻿@model IEnumerable<StoreCMS.Models.Department>
+
+@{
+    ViewBag.Title = "Departments";
+}
+
+<h2>Browse Departments</h2>
+<ul>
+    @foreach (var dept in Model)
+    {
+        <li>@Html.ActionLink(dept.DepartmentName, "Browse", new { deptId = dept.DeptId})   </li>
+    }
+    
+</ul>
+

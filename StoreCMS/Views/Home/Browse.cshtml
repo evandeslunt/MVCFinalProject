@@ -1,0 +1,23 @@
+﻿@model IEnumerable<StoreCMS.Models.Product>
+
+@{
+    ViewBag.Title = ViewBag.DepartmentName;
+}
+
+<h2>@ViewBag.DepartmentName</h2>
+
+<div class="row">
+    <div class="col-md-3">
+        @foreach (var prod in Model)
+        {
+            <div class="thumbnail">
+                <h3>@prod.ProductName</h3>
+                <img src="@prod.ImageUrl" alt="@prod.ProductName" />
+                <p>@prod.Description</p>
+                <a href="" class="btn btn-primary">Add to Cart</a>
+                <a href="" class="btn btn-info">More Info</a>
+            </div>
+        }
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+﻿@model StoreCMS.Models.Product
+
+@{
+    ViewBag.Title = "Item";
+}
+
+<h2>@Model.ProductName</h2>
+Note -- this page is in progress!
+<div class="row">
+    <div class="col-lg-2">
+        <div class="thumbnail">
+            <img src="@Model.ImageUrl" alt="@Model.ProductName" />
+        </div>
+    </div>
+    <div class="col-lg-2">
+        <h3>@Model.ProductName</h3>
+        <p>@Model.Description</p>
+        <p class="btn btn-success">@Model.Price</p>
+        
+        <a href="" class="btn btn-default">Add to Cart</a>
+        
+    </div>
+</div>
